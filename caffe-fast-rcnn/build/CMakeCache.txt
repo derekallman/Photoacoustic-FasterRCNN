@@ -375,7 +375,7 @@ CUDA_rt_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/librt.so
 CUDNN_INCLUDE:PATH=/usr/local/cuda/include
 
 //Path to cuDNN library.
-CUDNN_LIBRARY:FILEPATH=/usr/local/cuda/lib64/libcudnn.so
+CUDNN_LIBRARY:FILEPATH=CUDNN_LIBRARY-NOTFOUND
 
 //CUDNN root folder
 CUDNN_ROOT:PATH=
@@ -568,7 +568,7 @@ USE_OPENCV:BOOL=ON
 USE_PROJECT_FOLDERS:BOOL=OFF
 
 //Dependencies for the target
-caffe_LIB_DEPENDS:STATIC=general;proto;general;proto;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libglog.so;general;/usr/lib/x86_64-linux-gnu/libgflags.so;optimized;/home/pulseadmin/anaconda2/lib/libprotobuf.so;debug;/home/pulseadmin/anaconda2/lib/libprotobuf.so;general;-lpthread;general;/home/pulseadmin/anaconda2/lib/libhdf5_hl.so;general;/home/pulseadmin/anaconda2/lib/libhdf5.so;general;/home/pulseadmin/anaconda2/lib/libhdf5_hl.so;general;/home/pulseadmin/anaconda2/lib/libhdf5.so;general;/usr/lib/x86_64-linux-gnu/librt.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/home/pulseadmin/anaconda2/lib/libz.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/usr/lib/x86_64-linux-gnu/libm.so;general;/usr/lib/x86_64-linux-gnu/liblmdb.so;general;/home/pulseadmin/anaconda2/lib/libleveldb.so;general;/home/pulseadmin/anaconda2/lib/libsnappy.so;general;/usr/local/cuda/lib64/libcudart.so;general;/usr/local/cuda/lib64/libcurand.so;general;/usr/local/cuda/lib64/libcublas.so;general;/usr/local/cuda/lib64/libcudnn.so;general;opencv_core;general;opencv_highgui;general;opencv_imgproc;general;/usr/lib/liblapack_atlas.so;general;/usr/lib/libcblas.so;general;/usr/lib/libatlas.so;general;/home/pulseadmin/anaconda2/lib/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_python.so;
+caffe_LIB_DEPENDS:STATIC=general;proto;general;proto;general;/usr/lib/x86_64-linux-gnu/libboost_system.so;general;/usr/lib/x86_64-linux-gnu/libboost_thread.so;general;/usr/lib/x86_64-linux-gnu/libboost_filesystem.so;general;-lpthread;general;/usr/lib/x86_64-linux-gnu/libglog.so;general;/usr/lib/x86_64-linux-gnu/libgflags.so;optimized;/home/pulseadmin/anaconda2/lib/libprotobuf.so;debug;/home/pulseadmin/anaconda2/lib/libprotobuf.so;general;-lpthread;general;/home/pulseadmin/anaconda2/lib/libhdf5_hl.so;general;/home/pulseadmin/anaconda2/lib/libhdf5.so;general;/home/pulseadmin/anaconda2/lib/libhdf5_hl.so;general;/home/pulseadmin/anaconda2/lib/libhdf5.so;general;/usr/lib/x86_64-linux-gnu/librt.so;general;/usr/lib/x86_64-linux-gnu/libpthread.so;general;/home/pulseadmin/anaconda2/lib/libz.so;general;/usr/lib/x86_64-linux-gnu/libdl.so;general;/usr/lib/x86_64-linux-gnu/libm.so;general;/usr/lib/x86_64-linux-gnu/liblmdb.so;general;/home/pulseadmin/anaconda2/lib/libleveldb.so;general;/home/pulseadmin/anaconda2/lib/libsnappy.so;general;/usr/local/cuda/lib64/libcudart.so;general;/usr/local/cuda/lib64/libcurand.so;general;/usr/local/cuda/lib64/libcublas.so;general;opencv_core;general;opencv_highgui;general;opencv_imgproc;general;/usr/lib/liblapack_atlas.so;general;/usr/lib/libcblas.so;general;/usr/lib/libatlas.so;general;/home/pulseadmin/anaconda2/lib/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_python.so;
 
 //Dependencies for target
 gtest_LIB_DEPENDS:STATIC=
@@ -577,7 +577,7 @@ gtest_LIB_DEPENDS:STATIC=
 proto_LIB_DEPENDS:STATIC=
 
 //Dependencies for the target
-pycaffe_LIB_DEPENDS:STATIC=general;-Wl,--whole-archive;general;caffe;general;-Wl,--no-whole-archive;general;/home/pulseadmin/anaconda2/lib/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_python.so;
+pycaffe_LIB_DEPENDS:STATIC=general;caffe;general;/home/pulseadmin/anaconda2/lib/libpython2.7.so;general;/usr/lib/x86_64-linux-gnu/libboost_python.so;
 
 //Specify which Python version to use
 python_version:STRING=2
@@ -850,12 +850,6 @@ CUDA_npps_LIBRARY-ADVANCED:INTERNAL=1
 CUDA_parse_cubin:INTERNAL=/usr/local/share/cmake-3.4/Modules/FindCUDA/parse_cubin.cmake
 //Location of run_nvcc.cmake
 CUDA_run_nvcc:INTERNAL=/usr/local/share/cmake-3.4/Modules/FindCUDA/run_nvcc.cmake
-//ADVANCED property for variable: CUDNN_INCLUDE
-CUDNN_INCLUDE-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDNN_LIBRARY
-CUDNN_LIBRARY-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CUDNN_ROOT
-CUDNN_ROOT-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_DOT_EXECUTABLE
 DOXYGEN_DOT_EXECUTABLE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: DOXYGEN_EXECUTABLE
