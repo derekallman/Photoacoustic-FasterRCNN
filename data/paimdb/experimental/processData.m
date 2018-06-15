@@ -52,8 +52,8 @@ for ii = 1:length(dataList)
         end
         
         tmp = double((Atmp(:,1:simVars.Nt)));
-%         tmp = tmp - min(min(tmp));
-%         tmp = (tmp./max(max(tmp)));
+        tmp = tmp - min(min(tmp));
+        tmp = (tmp./max(max(tmp)));
         tmp = permute(repmat(tmp,[1,1,4]),[3 1 2]);
         tmp = reshape(tmp, 4*simVars.numElements,simVars.Nt)';
               

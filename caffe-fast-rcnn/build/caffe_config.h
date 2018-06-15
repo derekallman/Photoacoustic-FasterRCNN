@@ -8,7 +8,7 @@
 #define HAVE_CUDA
 
 /* NVIDA cuDNN */
-/* #undef HAVE_CUDNN */
+#define HAVE_CUDNN
 #define USE_CUDNN
 
 /* NVIDA cuDNN */

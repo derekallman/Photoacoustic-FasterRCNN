@@ -116,6 +116,7 @@ tools/convert_imageset: /home/pulseadmin/anaconda2/lib/libsnappy.so
 tools/convert_imageset: /usr/local/cuda/lib64/libcudart.so
 tools/convert_imageset: /usr/local/cuda/lib64/libcurand.so
 tools/convert_imageset: /usr/local/cuda/lib64/libcublas.so
+tools/convert_imageset: /usr/local/cuda/lib64/libcudnn.so
 tools/convert_imageset: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 tools/convert_imageset: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 tools/convert_imageset: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

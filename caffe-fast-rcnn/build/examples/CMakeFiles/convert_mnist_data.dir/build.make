@@ -116,6 +116,7 @@ examples/mnist/convert_mnist_data: /home/pulseadmin/anaconda2/lib/libsnappy.so
 examples/mnist/convert_mnist_data: /usr/local/cuda/lib64/libcudart.so
 examples/mnist/convert_mnist_data: /usr/local/cuda/lib64/libcurand.so
 examples/mnist/convert_mnist_data: /usr/local/cuda/lib64/libcublas.so
+examples/mnist/convert_mnist_data: /usr/local/cuda/lib64/libcudnn.so
 examples/mnist/convert_mnist_data: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 examples/mnist/convert_mnist_data: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 examples/mnist/convert_mnist_data: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

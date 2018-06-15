@@ -118,6 +118,7 @@ lib/_caffe.so: /home/pulseadmin/anaconda2/lib/libsnappy.so
 lib/_caffe.so: /usr/local/cuda/lib64/libcudart.so
 lib/_caffe.so: /usr/local/cuda/lib64/libcurand.so
 lib/_caffe.so: /usr/local/cuda/lib64/libcublas.so
+lib/_caffe.so: /usr/local/cuda/lib64/libcudnn.so
 lib/_caffe.so: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 lib/_caffe.so: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 lib/_caffe.so: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

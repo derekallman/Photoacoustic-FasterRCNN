@@ -116,6 +116,7 @@ tools/test_net: /home/pulseadmin/anaconda2/lib/libsnappy.so
 tools/test_net: /usr/local/cuda/lib64/libcudart.so
 tools/test_net: /usr/local/cuda/lib64/libcurand.so
 tools/test_net: /usr/local/cuda/lib64/libcublas.so
+tools/test_net: /usr/local/cuda/lib64/libcudnn.so
 tools/test_net: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 tools/test_net: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 tools/test_net: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

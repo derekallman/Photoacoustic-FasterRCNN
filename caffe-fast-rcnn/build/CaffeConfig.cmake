@@ -57,4 +57,4 @@ set(Caffe_DEFINITIONS "-DUSE_OPENCV;-DUSE_LMDB;-DUSE_LEVELDB")
 # Cuda support variables
 set(Caffe_CPU_ONLY OFF)
 set(Caffe_HAVE_CUDA TRUE)
-set(Caffe_HAVE_CUDNN FALSE)
+set(Caffe_HAVE_CUDNN TRUE)

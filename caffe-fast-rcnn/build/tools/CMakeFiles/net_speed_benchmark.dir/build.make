@@ -116,6 +116,7 @@ tools/net_speed_benchmark: /home/pulseadmin/anaconda2/lib/libsnappy.so
 tools/net_speed_benchmark: /usr/local/cuda/lib64/libcudart.so
 tools/net_speed_benchmark: /usr/local/cuda/lib64/libcurand.so
 tools/net_speed_benchmark: /usr/local/cuda/lib64/libcublas.so
+tools/net_speed_benchmark: /usr/local/cuda/lib64/libcudnn.so
 tools/net_speed_benchmark: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 tools/net_speed_benchmark: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 tools/net_speed_benchmark: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

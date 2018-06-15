@@ -116,6 +116,7 @@ tools/compute_image_mean: /home/pulseadmin/anaconda2/lib/libsnappy.so
 tools/compute_image_mean: /usr/local/cuda/lib64/libcudart.so
 tools/compute_image_mean: /usr/local/cuda/lib64/libcurand.so
 tools/compute_image_mean: /usr/local/cuda/lib64/libcublas.so
+tools/compute_image_mean: /usr/local/cuda/lib64/libcudnn.so
 tools/compute_image_mean: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 tools/compute_image_mean: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 tools/compute_image_mean: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

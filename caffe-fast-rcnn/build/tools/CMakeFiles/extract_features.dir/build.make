@@ -116,6 +116,7 @@ tools/extract_features: /home/pulseadmin/anaconda2/lib/libsnappy.so
 tools/extract_features: /usr/local/cuda/lib64/libcudart.so
 tools/extract_features: /usr/local/cuda/lib64/libcurand.so
 tools/extract_features: /usr/local/cuda/lib64/libcublas.so
+tools/extract_features: /usr/local/cuda/lib64/libcudnn.so
 tools/extract_features: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 tools/extract_features: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 tools/extract_features: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

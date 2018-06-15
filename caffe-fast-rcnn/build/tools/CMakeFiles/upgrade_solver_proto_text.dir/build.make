@@ -116,6 +116,7 @@ tools/upgrade_solver_proto_text: /home/pulseadmin/anaconda2/lib/libsnappy.so
 tools/upgrade_solver_proto_text: /usr/local/cuda/lib64/libcudart.so
 tools/upgrade_solver_proto_text: /usr/local/cuda/lib64/libcurand.so
 tools/upgrade_solver_proto_text: /usr/local/cuda/lib64/libcublas.so
+tools/upgrade_solver_proto_text: /usr/local/cuda/lib64/libcudnn.so
 tools/upgrade_solver_proto_text: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 tools/upgrade_solver_proto_text: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 tools/upgrade_solver_proto_text: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

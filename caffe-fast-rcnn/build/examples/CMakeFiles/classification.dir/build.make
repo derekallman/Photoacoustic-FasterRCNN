@@ -116,6 +116,7 @@ examples/cpp_classification/classification: /home/pulseadmin/anaconda2/lib/libsn
 examples/cpp_classification/classification: /usr/local/cuda/lib64/libcudart.so
 examples/cpp_classification/classification: /usr/local/cuda/lib64/libcurand.so
 examples/cpp_classification/classification: /usr/local/cuda/lib64/libcublas.so
+examples/cpp_classification/classification: /usr/local/cuda/lib64/libcudnn.so
 examples/cpp_classification/classification: /usr/lib/x86_64-linux-gnu/libopencv_highgui.so.2.4.8
 examples/cpp_classification/classification: /usr/lib/x86_64-linux-gnu/libopencv_imgproc.so.2.4.8
 examples/cpp_classification/classification: /usr/lib/x86_64-linux-gnu/libopencv_core.so.2.4.8

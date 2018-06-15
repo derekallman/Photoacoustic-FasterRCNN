@@ -76,7 +76,7 @@ set(CUDA_NVCC_FLAGS_DEBUG  ; )
 set(CUDA_NVCC_FLAGS_RELEASE  ; )
 set(CUDA_NVCC_FLAGS_MINSIZEREL  ; )
 set(CUDA_NVCC_FLAGS_RELWITHDEBINFO  ; )
-set(nvcc_flags -m64;-DCAFFE_VERSION=1.0.0-rc3;-DUSE_LMDB;-DUSE_LEVELDB;-DUSE_OPENCV;-DWITH_PYTHON_LAYER;-DGTEST_USE_OWN_TR1_TUPLE) # list
+set(nvcc_flags -m64;-DCAFFE_VERSION=1.0.0-rc3;-DUSE_LMDB;-DUSE_LEVELDB;-DUSE_CUDNN;-DUSE_OPENCV;-DWITH_PYTHON_LAYER;-DGTEST_USE_OWN_TR1_TUPLE) # list
 set(CUDA_NVCC_INCLUDE_ARGS "-I/usr/local/cuda/include;-I/home/pulseadmin/Photoacoustic-FasterRCNN/caffe-fast-rcnn/src;-I/usr/include;-I/home/pulseadmin/anaconda2/include;-I/home/pulseadmin/Photoacoustic-FasterRCNN/caffe-fast-rcnn/build/include;-I/usr/local/cuda/include;-I/usr/include/opencv;-I/usr/include/atlas;-I/home/pulseadmin/anaconda2/include/python2.7;-I/home/pulseadmin/.local/lib/python2.7/site-packages/numpy/core/include;-I/home/pulseadmin/Photoacoustic-FasterRCNN/caffe-fast-rcnn/include;-I/home/pulseadmin/Photoacoustic-FasterRCNN/caffe-fast-rcnn/build") # list (needs to be in quotes to handle spaces properly).
 set(format_flag "-c") # string
 set(cuda_language_flag ) # list
