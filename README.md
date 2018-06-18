@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Caffe
 
 [![Build Status](https://travis-ci.org/BVLC/caffe.svg?branch=master)](https://travis-ci.org/BVLC/caffe)
@@ -43,3 +44,10 @@ Please cite Caffe in your publications if it helps your research:
       Title = {Caffe: Convolutional Architecture for Fast Feature Embedding},
       Year = {2014}
     }
+=======
+Data for this project can be found on [IEEE DataPort](https://ieee-dataport.org/open-access/photoacoustic-source-detection-and-reflection-artifact-deep-learning-dataset).  
+
+> Allman D, Reiter A, Bell MAL, Photoacoustic source detection and reflection artifact removal enabled by deep learning, IEEE Transactions on Medical Imaging, 2018
+
+If you use the code/algorithm for research, please cite the above paper. For commercial use, please contact mledijubell@jhu.edu to discuss the related IP.
+>>>>>>> b6a902df5a6567eba1bd0eed1cb0fe981797b8e2
