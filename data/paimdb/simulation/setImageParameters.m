@@ -5,11 +5,11 @@
 close all; clearvars -except p; clc;
 
 % select folder for channel data which will be used
-chDatFID = uigetdir([],'Select folder containing source channel data to use.'); 
+chDatLoc = uigetdir([],'Select folder containing source channel data to use.'); 
                     % folder containing proper labels for simulated sources
-
+                    
 % create save directory for reflection dataset
-refFID = 'test';
+refFID = 'L3-8_1s_1r';
 refLoc = ['../datasets/' refFID];
 
 if exist('../datasets/.gitignore', 'file')
@@ -27,8 +27,8 @@ if ~exist([refLoc '/results/faster_rcnn'], 'dir')
 end
 
 % load labels and simulation parameters
-load([chDatFID '/labels.mat']);
-load([chDatFID '/params.mat']);
+load([chDatLoc '/labels.mat']);
+load([chDatLoc '/params.mat']);
 
 nIms = 200;   % number of images in dataset
 
@@ -74,7 +74,7 @@ end
 parforProgress(0);
 
 save([refLoc '/params.mat'],'nIms','minSrc','maxSrc','minRef','maxRef',...
-    'minIn','maxIn','src','ref','refFID','chDatFID','c','minNoise','maxNoise','trainP','testP');
+    'minIn','maxIn','src','ref','refFID','chDatFID','chDatLoc','c','minNoise','maxNoise','trainP','testP','Nt','upsampleElement','numElements');
 
 % kill parallel pool
 delete(p);

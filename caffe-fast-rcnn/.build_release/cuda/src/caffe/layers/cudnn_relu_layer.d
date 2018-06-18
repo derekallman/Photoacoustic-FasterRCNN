@@ -11,8 +11,8 @@
     /usr/local/cuda/include/device_types.h \
     /usr/local/cuda/include/host_defines.h \
     /usr/local/cuda/include/driver_types.h \
-    /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/limits.h \
-    /usr/lib/gcc/x86_64-linux-gnu/4.8/include-fixed/syslimits.h \
+    /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/limits.h \
+    /usr/lib/gcc/x86_64-linux-gnu/5/include-fixed/syslimits.h \
     /usr/include/limits.h \
     /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
     /usr/include/x86_64-linux-gnu/bits/local_lim.h \
@@ -20,7 +20,7 @@
     /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
     /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
     /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
-    /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stddef.h \
+    /usr/lib/gcc/x86_64-linux-gnu/5/include/stddef.h \
     /usr/local/cuda/include/surface_types.h \
     /usr/local/cuda/include/texture_types.h \
     /usr/local/cuda/include/vector_types.h \
@@ -40,17 +40,17 @@
     /usr/include/x86_64-linux-gnu/bits/types.h \
     /usr/include/x86_64-linux-gnu/bits/typesizes.h \
     /usr/include/x86_64-linux-gnu/bits/timex.h \
-    /usr/include/c++/4.8/new \
-    /usr/include/x86_64-linux-gnu/c++/4.8/bits/c++config.h \
-    /usr/include/x86_64-linux-gnu/c++/4.8/bits/os_defines.h \
-    /usr/include/x86_64-linux-gnu/c++/4.8/bits/cpu_defines.h \
-    /usr/include/c++/4.8/exception \
-    /usr/include/c++/4.8/bits/atomic_lockfree_defines.h \
+    /usr/include/c++/5/new \
+    /usr/include/x86_64-linux-gnu/c++/5/bits/c++config.h \
+    /usr/include/x86_64-linux-gnu/c++/5/bits/os_defines.h \
+    /usr/include/x86_64-linux-gnu/c++/5/bits/cpu_defines.h \
+    /usr/include/c++/5/exception \
+    /usr/include/c++/5/bits/atomic_lockfree_defines.h \
     /usr/include/stdio.h \
     /usr/include/libio.h \
     /usr/include/_G_config.h \
     /usr/include/wchar.h \
-    /usr/lib/gcc/x86_64-linux-gnu/4.8/include/stdarg.h \
+    /usr/lib/gcc/x86_64-linux-gnu/5/include/stdarg.h \
     /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
     /usr/include/x86_64-linux-gnu/bits/stdio.h \
     /usr/include/x86_64-linux-gnu/bits/stdio2.h \
@@ -83,10 +83,10 @@
     /usr/include/x86_64-linux-gnu/bits/mathdef.h \
     /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
     /usr/include/x86_64-linux-gnu/bits/mathinline.h \
-    /usr/include/c++/4.8/cmath \
-    /usr/include/c++/4.8/bits/cpp_type_traits.h \
-    /usr/include/c++/4.8/ext/type_traits.h \
-    /usr/include/c++/4.8/cstdlib \
+    /usr/include/c++/5/cmath \
+    /usr/include/c++/5/bits/cpp_type_traits.h \
+    /usr/include/c++/5/ext/type_traits.h \
+    /usr/include/c++/5/cstdlib \
     /usr/local/cuda/include/math_functions.hpp \
     /usr/local/cuda/include/math_functions_dbl_ptx3.h \
     /usr/local/cuda/include/math_functions_dbl_ptx3.hpp \

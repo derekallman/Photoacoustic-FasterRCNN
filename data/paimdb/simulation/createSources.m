@@ -73,8 +73,8 @@ parfor i = 1:size(loopLabels,1)
         windowedSensorData = mean(windowedSensorData,3);
         windowedSensorData = windowedSensorData - min(min(windowedSensorData));
         windowedSensorData = (windowedSensorData./max(max(windowedSensorData)));
-        windowedSensorData = permute(repmat(windowedSensorData,[1,1,4]),[3 1 2]);
-        windowedSensorData = reshape(windowedSensorData, 4*numElements,Nt)';
+        windowedSensorData = permute(repmat(windowedSensorData,[1,1,upsampleElement]),[3 1 2]);
+        windowedSensorData = reshape(windowedSensorData, upsampleElement*numElements,Nt)';
         imwrite(windowedSensorData,channelFile);
     end
     parforProgress;

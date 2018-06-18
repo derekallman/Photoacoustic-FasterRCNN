@@ -33,7 +33,8 @@ dt = 1/(40e6);      % 1/sampling frequency
 % simElements = 300;    % total number of transducer elements
 elWidth = round(0.00024/dx);       % width of each element [grid points]
 elSpacing = round(0.00006/dx);     % spacing (kerf width) between the elements [grid points]
-numElements = 128;              
+numElements = 128;      
+upsampleElement = 4;    % upsamples element size to prevent image from being too skinny when saving
 apLength = numElements * elWidth + (numElements - 1) * elSpacing; % [grid points]
 apWidth = apLength * dx;    % [mm]
 

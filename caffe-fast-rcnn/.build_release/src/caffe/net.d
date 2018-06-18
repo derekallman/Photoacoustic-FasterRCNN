@@ -24,14 +24,14 @@
  /home/pulseadmin/anaconda2/include/H5Rpublic.h \
  /home/pulseadmin/anaconda2/include/H5Spublic.h \
  /home/pulseadmin/anaconda2/include/H5FDcore.h \
+ /home/pulseadmin/anaconda2/include/H5FDdirect.h \
  /home/pulseadmin/anaconda2/include/H5FDfamily.h \
  /home/pulseadmin/anaconda2/include/H5FDlog.h \
  /home/pulseadmin/anaconda2/include/H5FDmpi.h \
  /home/pulseadmin/anaconda2/include/H5FDmpio.h \
  /home/pulseadmin/anaconda2/include/H5FDmulti.h \
  /home/pulseadmin/anaconda2/include/H5FDsec2.h \
- /home/pulseadmin/anaconda2/include/H5FDstdio.h \
- /home/pulseadmin/anaconda2/include/H5FDdirect.h include/caffe/common.hpp \
+ /home/pulseadmin/anaconda2/include/H5FDstdio.h include/caffe/common.hpp \
  include/caffe/util/device_alternate.hpp \
  /usr/local/cuda/include/cublas_v2.h /usr/local/cuda/include/cublas_api.h \
  /usr/local/cuda/include/driver_types.h \
@@ -54,38 +54,8 @@
  /usr/local/cuda/include/vector_functions.hpp \
  /usr/local/cuda/include/curand.h /usr/local/cuda/include/driver_types.h \
  include/caffe/layer.hpp include/caffe/blob.hpp \
- .build_release/src/caffe/proto/caffe.pb.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/common.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/port.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/macros.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/platform_macros.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/logging.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/scoped_ptr.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/mutex.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/callback.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/type_traits.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/template_util.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/arena.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomic_sequence_num.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/arenastring.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/fastmem.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/generated_message_util.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/once.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/metadata.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/unknown_field_set.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/message.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/message_lite.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/descriptor.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/shared_ptr.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/repeated_field.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/casts.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/extension_set.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_reflection.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_util.h \
- include/caffe/syncedmem.hpp include/caffe/layer_factory.hpp \
- include/caffe/util/math_functions.hpp \
+ .build_release/src/caffe/proto/caffe.pb.h include/caffe/syncedmem.hpp \
+ include/caffe/layer_factory.hpp include/caffe/util/math_functions.hpp \
  include/caffe/util/mkl_alternate.hpp include/caffe/net.hpp \
  include/caffe/parallel.hpp include/caffe/internal_thread.hpp \
  include/caffe/solver.hpp include/caffe/solver_factory.hpp \
@@ -98,6 +68,7 @@
  /home/pulseadmin/anaconda2/include/H5IMpublic.h \
  /home/pulseadmin/anaconda2/include/H5TBpublic.h \
  /home/pulseadmin/anaconda2/include/H5PTpublic.h \
+ /home/pulseadmin/anaconda2/include/H5LDpublic.h \
  include/caffe/util/insert_splits.hpp \
  include/caffe/util/upgrade_proto.hpp \
  include/caffe/test/test_caffe_main.hpp src/gtest/gtest.h
@@ -152,6 +123,8 @@
 
 /home/pulseadmin/anaconda2/include/H5FDcore.h:
 
+/home/pulseadmin/anaconda2/include/H5FDdirect.h:
+
 /home/pulseadmin/anaconda2/include/H5FDfamily.h:
 
 /home/pulseadmin/anaconda2/include/H5FDlog.h:
@@ -165,8 +138,6 @@
 /home/pulseadmin/anaconda2/include/H5FDsec2.h:
 
 /home/pulseadmin/anaconda2/include/H5FDstdio.h:
-
-/home/pulseadmin/anaconda2/include/H5FDdirect.h:
 
 include/caffe/common.hpp:
 
@@ -224,64 +195,6 @@ include/caffe/blob.hpp:
 
 .build_release/src/caffe/proto/caffe.pb.h:
 
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/common.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/port.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/macros.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/platform_macros.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/logging.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/scoped_ptr.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/mutex.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/callback.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/type_traits.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/template_util.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/arena.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomic_sequence_num.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/arenastring.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/fastmem.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/generated_message_util.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/once.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/metadata.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/unknown_field_set.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/message.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/message_lite.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/descriptor.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/shared_ptr.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/repeated_field.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/casts.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/extension_set.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_reflection.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_util.h:
-
 include/caffe/syncedmem.hpp:
 
 include/caffe/layer_factory.hpp:
@@ -319,6 +232,8 @@ include/caffe/util/hdf5.hpp:
 /home/pulseadmin/anaconda2/include/H5TBpublic.h:
 
 /home/pulseadmin/anaconda2/include/H5PTpublic.h:
+
+/home/pulseadmin/anaconda2/include/H5LDpublic.h:
 
 include/caffe/util/insert_splits.hpp:
 

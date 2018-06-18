@@ -22,8 +22,8 @@ end
 
 % load labels and simulation parameters
 load([refLoc '/params.mat']);
-load([chDatFID '/labels.mat']);
-load([chDatFID '/params.mat']);
+load([chDatLoc '/labels.mat']);
+load([chDatLoc '/params.mat']);
 
 % randomize training folds
 r = randperm(nIms);
@@ -55,7 +55,7 @@ parfor i = 1:nIms
     end
     annoID = fopen([refLoc '/data/Annotations/' num2str(i,'%.6d') '.txt'],'w');
     
-    im = zeros(4*numElements,Nt);
+    im = zeros(upsampleElement*numElements,Nt);
     c = labels(src{i}(1),1);
 %     kgrid = makeGrid(Nx, dx, Ny, dy);
 %     [kgrid.t_array, dt] = makeTime(kgrid, c);
@@ -64,7 +64,7 @@ parfor i = 1:nIms
         sIdx = src{i}(s);
         
         % load source channel data and add to image
-        channelFile = sprintf([chDatFID '/ChannelData/%06d.png'], sIdx);
+        channelFile = sprintf([chDatLoc '/ChannelData/%06d.png'], sIdx);
         sChDat = double(imread(channelFile))';
         intensity = (maxIn-minIn).*rand(1) + minIn;
         im = im + intensity*sChDat;
@@ -74,12 +74,12 @@ parfor i = 1:nIms
         sLocList{i} = [sLocList{i}; sLoc];
         
         % write source annotation
-        bbox = [4*(round(sLoc(2))-8), (sLoc(1)-.001)/c/dt, 4*(round(sLoc(2))+8),  (sLoc(1)+.001)/c/dt];
+        bbox = [upsampleElement*(round(sLoc(2))-8), (sLoc(1)-.001)/c/dt, upsampleElement*(round(sLoc(2))+8),  (sLoc(1)+.001)/c/dt];
         neg = find(bbox < 0); bbox(neg) = 0;
         if bbox(2) > Nt bbox(2) = Nt; end
         if bbox(4) > Nt bbox(4) = Nt; end
-        if bbox(1) > 4*numElements bbox(1) = 4*numElements; end;
-        if bbox(3) > 4*numElements bbox(3) = 4*numElements; end;
+        if bbox(1) > upsampleElement*numElements bbox(1) = upsampleElement*numElements; end;
+        if bbox(3) > upsampleElement*numElements bbox(3) = upsampleElement*numElements; end;
         bbox = cast(round(bbox),'uint16');
         fprintf(annoID,'source %d %d %d %d\n',...
             bbox(1), bbox(2), bbox(3), bbox(4));
@@ -95,7 +95,7 @@ parfor i = 1:nIms
             shift = round(delta/c/dt);
             
             % load source channel data and add to image
-            channelFile = sprintf([chDatFID '/ChannelData/%06d.png'], rIdx);
+            channelFile = sprintf([chDatLoc '/ChannelData/%06d.png'], rIdx);
             rChDat = double(imread(channelFile))';
             rChDat = circshift(rChDat,shift,2);
             rChDat(:,1:shift) = mode(rChDat(:));
@@ -104,12 +104,12 @@ parfor i = 1:nIms
             im = im + intensity*rChDat;
             
             % write artifact annotation
-            bbox = [4*(round(rLoc(2))-8), (rLoc(1)-.001)/c/dt+shift, 4*(round(rLoc(2))+8),  (rLoc(1)+.001)/c/dt+shift];
+            bbox = [upsampleElement*(round(rLoc(2))-8), (rLoc(1)-.001)/c/dt+shift, upsampleElement*(round(rLoc(2))+8),  (rLoc(1)+.001)/c/dt+shift];
             neg = find(bbox < 0); bbox(neg) = 0;
             if bbox(2) > Nt bbox(2) = Nt; end
             if bbox(4) > Nt bbox(4) = Nt; end
-            if bbox(1) > 4*numElements bbox(1) = 4*numElements; end;
-            if bbox(3) > 4*numElements bbox(3) = 4*numElements; end;
+            if bbox(1) > upsampleElement*numElements bbox(1) = upsampleElement*numElements; end;
+            if bbox(3) > upsampleElement*numElements bbox(3) = upsampleElement*numElements; end;
             bbox = cast(round(bbox),'uint16');
             if bbox(2) ~= Nt
                 fprintf(annoID,'artifact %d %d %d %d\n',...

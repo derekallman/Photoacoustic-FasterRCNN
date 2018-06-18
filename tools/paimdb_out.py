@@ -31,8 +31,9 @@ CLASSES = ('__background__',
 NETS = {'vgg16': ('VGG16',
                   'VGG16_faster_rcnn_final.caffemodel')}
 
-TRAIN = 'L3-8_s1_r1'
-DATASET = 'steak'
+TRAIN_NET = 'L3-8_1s_1r'
+DATASET = 'waterbath'
+RFSET = 'L3-8_512_1200'
 
 
 def vis_detections(im, class_name, dets, name, thresh=0.5):
@@ -68,7 +69,7 @@ def vis_detections(im, class_name, dets, name, thresh=0.5):
     plt.tight_layout()
     #ax.set_aspect(3/4,adjustable='box')
     plt.draw()
-    imdir = "../paimdb/evaluation/experimental/" + DATASET + "/cnn_output/" + TRAIN + "/box_ims/"
+    imdir = cfg.DATA_DIR + "/paimdb/experimental/" + DATASET + "/CNN_OUT/" + TRAIN_NET + "/box_ims/"
     if not os.path.exists(imdir):
         os.makedirs(imdir)
     plt.savefig(imdir + "/" + splitext(name)[0] + "_" + class_name + ".png", bbox_inches="tight")
@@ -77,7 +78,7 @@ def demo(net, image_name):
 
     # Load the demo image
     im_file = os.path.join(cfg.DATA_DIR, 
-        'paimdb/evaluation/experimental/' + DATASET + '/Rf_data', image_name)
+        'paimdb/experimental/' + DATASET + '/RFDAT_' + RFSET, image_name)
     im = cv2.imread(im_file)
     print(im.shape)
     # Detect all object classes and regress object bounds
@@ -104,7 +105,7 @@ def demo(net, image_name):
     dets = dets[keep, :]
     vis_detections(im, cls, dets, image_name, thresh=CONF_THRESH)
     corr_dets = dets[dets[:,4]>CONF_THRESH]
-    detdir = "../paimdb/evaluation/experimental/" + DATASET + "/cnn_output/" + TRAIN + "/dets/"
+    detdir = cfg.DATA_DIR + "/paimdb/experimental/" + DATASET + "/CNN_OUT/" + TRAIN_NET + "/dets/"
     if not os.path.exists(detdir):
         os.makedirs(detdir)
     np.savetxt(detdir + "/" + splitext(image_name)[0] + "_" + cls + ".csv", corr_dets, delimiter=",")
@@ -138,7 +139,7 @@ if __name__ == '__main__':
 
     
     caffemodel = os.path.join('output', 'faster_rcnn_end2end',
-                              'paimdb_' + TRAIN + '_train','vgg16_faster_rcnn_iter_100000.caffemodel')
+                              'paimdb_' + TRAIN_NET + '_train','vgg16_faster_rcnn_iter_100000.caffemodel')
 
     if not os.path.isfile(caffemodel):
         raise IOError(('{:s} not found.\nDid you run ./data/script/'
@@ -159,9 +160,8 @@ if __name__ == '__main__':
     for i in xrange(2):
         _, _= im_detect(net, im)
 
-    im_names = []
-    for i in range(16,-1, -1):
-        im_names.append("RF_data_output{}.png".format(i+1))
+    #im_names = []
+    im_names = [f for f in os.listdir(cfg.DATA_DIR + '/paimdb/experimental/' + DATASET + '/RFDAT_' + RFSET) if f.endswith(".png")]
     print(im_names)
     for im_name in im_names:
         print '~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~'

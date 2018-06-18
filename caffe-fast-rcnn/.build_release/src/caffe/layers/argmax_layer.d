@@ -22,38 +22,9 @@
  /usr/local/cuda/include/vector_functions.h \
  /usr/local/cuda/include/vector_functions.hpp \
  /usr/local/cuda/include/curand.h /usr/local/cuda/include/driver_types.h \
- .build_release/src/caffe/proto/caffe.pb.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/common.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/port.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/macros.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/platform_macros.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/logging.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/scoped_ptr.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/mutex.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/callback.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/type_traits.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/template_util.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/arena.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomic_sequence_num.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/arenastring.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/fastmem.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/generated_message_util.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/once.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/metadata.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/unknown_field_set.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/message.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/message_lite.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/descriptor.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/shared_ptr.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/repeated_field.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/stubs/casts.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/extension_set.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_reflection.h \
- /home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_util.h \
- include/caffe/syncedmem.hpp include/caffe/layer.hpp \
- include/caffe/layer_factory.hpp include/caffe/util/math_functions.hpp \
+ .build_release/src/caffe/proto/caffe.pb.h include/caffe/syncedmem.hpp \
+ include/caffe/layer.hpp include/caffe/layer_factory.hpp \
+ include/caffe/util/math_functions.hpp \
  include/caffe/util/mkl_alternate.hpp
 
 include/caffe/layers/argmax_layer.hpp:
@@ -111,64 +82,6 @@ include/caffe/util/device_alternate.hpp:
 /usr/local/cuda/include/driver_types.h:
 
 .build_release/src/caffe/proto/caffe.pb.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/common.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/port.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/macros.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/platform_macros.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/logging.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/scoped_ptr.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/mutex.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/callback.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/type_traits.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/template_util.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/arena.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomic_sequence_num.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/atomicops_internals_x86_gcc.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/arenastring.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/fastmem.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/generated_message_util.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/once.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/metadata.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/unknown_field_set.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/message.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/message_lite.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/descriptor.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/shared_ptr.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/repeated_field.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/stubs/casts.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/extension_set.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_reflection.h:
-
-/home/pulseadmin/anaconda2/include/google/protobuf/generated_enum_util.h:
 
 include/caffe/syncedmem.hpp:
 
